@@ -349,3 +349,32 @@
       .nav-links { display: none; }
       .hero { min-height: auto; padding-top: 42px; }
     }
+    .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.social-icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: all 0.2s ease;
+}
+
+.social-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+  border-color: rgba(124,156,255,0.4);
+  background: rgba(255,255,255,0.1);
+}
