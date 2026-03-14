@@ -35,13 +35,6 @@
       margin: 0 0 12px;
       letter-spacing: -0.02em;
     }
-    .section-subtitle {
-      color: var(--muted);
-      max-width: 760px;
-      margin: 0 0 32px;
-      font-size: 1rem;
-    }
-
     .nav {
       position: sticky;
       top: 0;
@@ -128,6 +121,7 @@
       font-weight: 700;
       border: 1px solid transparent;
       transition: 0.2s ease;
+      cursor: pointer;
     }
     .btn-primary {
       background: linear-gradient(135deg, var(--accent), #9b7cff);
@@ -139,6 +133,21 @@
       background: rgba(255,255,255,0.05);
       border-color: rgba(255,255,255,0.10);
       color: var(--text);
+    }
+
+    /* Document / recommendation buttons */
+    .btn-doc {
+      /* background: rgba(124, 156, 255, 0.22);
+      border-color: rgba(124, 156, 255, 0.35);
+      color: var(--accent-2); */
+      background: linear-gradient(135deg, var(--accent), #9b7cff);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .btn-doc:hover {
+      background: rgba(124, 156, 255, 0.32);
+      transform: translateY(-1px);
     }
 
     .hero-card {
@@ -167,20 +176,6 @@
 	  margin-top: 20px;
 	  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
 	}
-    .profile-avatar {
-	  width: 160px;
-	  height: 160px;
-	  border-radius: 24px;
-	  display: grid;
-	  place-items: center;
-	  margin-bottom: 20px;
-	}
-    .profile-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 24px;
-    }
     .hero-stats {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -195,13 +190,6 @@
     }
     .stat strong { font-size: 1.1rem; display: block; }
     .stat span { color: var(--muted); font-size: 0.92rem; }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 28px;
-      align-items: start;
-    }
 
     .card {
       background: var(--card);
@@ -289,6 +277,7 @@
       font-weight: 700;
     }
     .project-links a { color: var(--accent-2); }
+    .project-links a.btn-doc { color: white; }
 
     .quote {
       font-size: 1rem;
@@ -303,37 +292,6 @@
     .contact {
       text-align: center;
     }
-    .contact-box {
-      max-width: 840px;
-      margin: 0 auto;
-      padding: 34px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
-      border: 1px solid var(--card-border);
-      border-radius: 28px;
-      box-shadow: var(--shadow);
-    }
-    .contact-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 22px;
-    }
-    .doc-link {
-      display: inline-block;
-      color: var(--accent);
-      text-decoration: none;
-      background: rgba(255,255,255,0.05);
-      padding: 4px 8px;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background 0.2s ease;
-    }
-
-    .doc-link:hover {
-      background: rgba(255,255,255,0.1);
-      text-decoration: underline;
-    }
 
     footer {
       padding: 28px 0 40px;
@@ -344,7 +302,6 @@
 
     @media (max-width: 920px) {
       .hero-grid,
-      .grid-2,
       .projects-grid,
       .interest-grid,
       .rec-grid {
