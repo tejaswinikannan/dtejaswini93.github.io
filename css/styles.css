@@ -213,6 +213,7 @@
 
     .interest-grid,
     .projects-grid,
+    .cert-grid,
     .rec-grid {
       display: grid;
       gap: 18px;
@@ -220,6 +221,7 @@
     .interest-grid { grid-template-columns: repeat(3, 1fr); }
     .projects-grid { grid-template-columns: repeat(2, 1fr); }
     .rec-grid { grid-template-columns: repeat(2, 1fr); }
+    .cert-grid { grid-template-columns: repeat(3, 1fr); }
 
     .interest-card,
     .project-card,
@@ -303,6 +305,7 @@
     @media (max-width: 920px) {
       .hero-grid,
       .projects-grid,
+      .cert-grid,
       .interest-grid,
       .rec-grid {
         grid-template-columns: 1fr;
